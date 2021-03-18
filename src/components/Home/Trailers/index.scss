@@ -1,0 +1,66 @@
+.trailers{
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(34,60,72, 1) 0%, rgba(194,200,205, 0) 100%), url("https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/qKiOZMJH9Riqlk2SkUOgSMZHHJu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .trailer{
+        display: flex;
+        margin-top: 25px;
+        padding-bottom: 25px;
+        h2{
+            margin-top: 30px;
+            padding-left: 35px;
+            margin-right: 25px;
+            color: white;
+        }
+
+        ul{
+            display: inline-flex;
+            margin-top: 30px;
+            width: fit-content;
+            list-style: none;
+            border: 1px solid #1ed5a9;
+            border-radius: 50px;
+            color: white;
+
+            li{
+                padding-top: 3px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            .active{
+                background: #2fd9ad;
+                color: #032541;
+            }
+            
+        }
+    }
+    .list1{
+        display: flex;
+        margin-left: 40px;
+        overflow-x: scroll;
+        div{
+            padding-right: 15px;
+            img{
+                height: 150px;
+                width: 300px;
+                border-radius: 10px;
+            }
+            p{
+                font-size: 14px;
+                color:white;
+                padding-bottom: 35px;
+            }
+            h4{
+                color: white;
+                font-size: 17px;
+            }
+        } 
+    }
+}

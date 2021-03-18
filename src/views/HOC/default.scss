@@ -1,0 +1,62 @@
+.container{
+    padding-top: 70px;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    margin-bottom: 0%;
+    background: #032541;
+    height: 70px;
+    color: white;
+    
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 10px;
+            list-style: none;
+            width: 80%;
+            color: white;
+            div{
+                display: flex;
+                align-items: center;
+                color: white;
+                
+                li{
+                    color: white;
+                    align-items: center;
+                    padding: 10px;
+                    
+                    link{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes hide{
+    from {top:0px;}
+    to {top:-70px;}
+}
+
+@keyframes show{
+    from {top:-70px}
+    to {top: 0px;}
+}
+.open{
+    animation-name: show;
+    animation-duration: 0.7s;
+}
+
+.close{
+    animation-name: hide;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+

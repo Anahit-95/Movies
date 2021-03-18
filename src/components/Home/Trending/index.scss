@@ -1,0 +1,55 @@
+.trending{
+    position: relative;
+    width: 90%;
+    margin-left: 8%;
+    margin-right: 5%;
+    max-height: 320px;
+    margin-bottom: 50px;
+    // background-image: url("https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/qKiOZMJH9Riqlk2SkUOgSMZHHJu.jpg");
+    
+    .trend{
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        h2{
+            margin-right: 25px
+        }
+
+        ul{
+            display: inline-flex;
+            width: fit-content;
+            list-style: none;
+            border: 1px solid #032541;
+            border-radius: 50px;
+
+            li{
+                padding-top: 3px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            .active{
+                background: #032541;
+                color: #b8fccd;
+            }
+            
+        }
+    }
+}
+
+.list{
+    display: flex;
+    div{
+        padding-right: 20px;
+        img{
+            height: 225px;
+            width: 150px;
+            border-radius: 10px;
+        }
+        p{
+            font-size: 14px;
+            color: #909090;
+        }
+    } 
+} 

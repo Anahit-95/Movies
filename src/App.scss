@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
+}
+
+body{
+  background-color: #fafbfc;
+  margin-top: 0%;
+}

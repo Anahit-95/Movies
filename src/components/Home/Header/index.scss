@@ -1,0 +1,57 @@
+.header{
+    position: relative;
+    padding-top: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 360px;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(3,37,65, 0.8) 0%, rgba(3,37,65, 0) 100%), url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/6LfVuZBiOOCtqch5Ukspjb9y0EB.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/6LfVuZBiOOCtqch5Ukspjb9y0EB.jpg");
+    
+    h1{
+        position: absolute;
+        top: 8%;
+        left: 4%;
+        color: white;
+        font-size: 50px;
+    }
+    h2{
+        position: absolute;
+        left: 4.2%;
+        top: 30%;
+        color: white;
+    }
+
+    div{
+        position: absolute;
+        display: flex;
+        width: 90%;
+        left: 4%;
+        top: 60%;
+        max-width: 90%;
+
+        input{
+            color: #7f7f7f;
+            width: 95%;
+            border: none;
+            border-radius: 100px;
+            height: 45px;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+
+        button{
+            position: absolute;
+            background-color: #1ad0b1;
+            color: white;
+            width: 100px;
+            height: 45px;
+            border: none;
+            border-radius: 100px;
+            right: 0%;
+        }
+    }
+}
