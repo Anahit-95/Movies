@@ -18,26 +18,30 @@ function Popular(){
         }
     }
 
+    const getFilms = () => {
+        dispatch(getMovies())
+    }
+
     useEffect(()=>{
         dispatch(getMovies())
     },[activeIndex])
 
-    useEffect(()=>{
-        const listScroll=()=>{
-            let scrollLeft = listRef.current.scrollLeft
-            let scrollWidth = listRef.current.scrollWidth
-            let barWidth = listRef.current.offsetWidth
-            if(scrollWidth-scrollLeft==barWidth){
-                dispatch(getMovies())
-            }
-        }
+    // useEffect(()=>{
+    //     const listScroll=()=>{
+    //         let scrollLeft = listRef.current.scrollLeft
+    //         let scrollWidth = listRef.current.scrollWidth
+    //         let barWidth = listRef.current.offsetWidth
+    //         if(scrollWidth-scrollLeft==barWidth){
+    //             dispatch(getMovies())
+    //         }
+    //     }
 
-        listRef.current.addEventListener("scroll", listScroll)
+    //     listRef.current.addEventListener("scroll", listScroll)
         
-        return () => {
-            listRef.current.removeEventListener("scroll",listScroll)
-        }
-    }, [])
+    //     return () => {
+    //         listRef.current.removeEventListener("scroll",listScroll)
+    //     }
+    // }, [])
 
     return(
         <div className="popular">
@@ -45,8 +49,8 @@ function Popular(){
                     <h2>What's Popular</h2>
                     <Menu data={popular} fn={popularFunction}/>
                 </div>
-                {/* <MovieList data={popular.movies} design={style}/> */}
-                <div ref={listRef} className="list">
+                <MovieList data={popular.movies} design={style} fn={getFilms}/>
+                {/* <div ref={listRef} className="list">
                     {
                         popular.movies.map((elm,i)=>{
                             return <div key={i}>
@@ -58,7 +62,7 @@ function Popular(){
                             </div>
                         })
                     }
-                </div>
+                </div> */}
             </div>
     )
 }
