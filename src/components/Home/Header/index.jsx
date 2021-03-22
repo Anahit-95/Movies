@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import './index.scss'
 
 function Header(){
-    const { menu } = useSelector(state => state);
+    // const { menu } = useSelector(state => state);
 
     return(
         <div className="header">

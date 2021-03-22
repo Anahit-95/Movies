@@ -1,16 +1,18 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { activate, getTop } from '../../../redux/Actions/FreeAct'
+import { activate, getTop } from '../../../redux/Actions/TopAct'
 import './index.scss'
 import Menu from '../Menu'
 import MovieList from '../MovieList'
 
 function Free(){
-    const free=useSelector(state => state.free)
-    const activeIndex=useSelector(state => state.free.activeIndex)
+    const free=useSelector(state => state.topRated)
+    const activeIndex=useSelector(state => state.topRated.activeIndex)
     const dispatch=useDispatch()
     const freeFunction = (index) => {
-        dispatch(activate(index))
+        if (index !== activeIndex) {
+            dispatch(activate(index))
+        }
     }
     const getFilms = () => {
         dispatch(getTop())

@@ -11,7 +11,9 @@ function  Trending() {
     const dispatch = useDispatch()
 
     const trendingFunction = (index) => {
-        dispatch(activate(index))
+        if (index !== activeIndex) {
+            dispatch(activate(index))
+        }
     }
     const getFilms = () => {
         dispatch(getTrending())

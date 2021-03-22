@@ -1,7 +1,7 @@
 import homeRed from "./homeRed"
 import popularRed from './popularRed'
-import freeRed from './freeRed'
+import topRed from './topRed'
 import trailerRed from './trailerRed'
 import trendingRed from './trendingRed'
 import {combineReducers} from "redux"
-export default combineReducers({home:homeRed, popular:popularRed, free:freeRed, trailer:trailerRed, trending:trendingRed})
+export default combineReducers({home:homeRed, popular:popularRed, topRated:topRed, trailer:trailerRed, trending:trendingRed})

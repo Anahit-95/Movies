@@ -45,12 +45,26 @@
         display: flex;
         margin-left: 40px;
         overflow-x: scroll;
-        div{
+        div {
+            position: relative;
             padding-right: 15px;
             img{
-                height: 150px;
+                height: 200px;
                 width: 300px;
                 border-radius: 10px;
+            }
+            // iframe{
+            //     height: 200px;
+            //     width: 300px;
+            //     border-radius: 10px;
+            // }
+            .play{
+                position: absolute;
+                top: 27%;
+                left: 35%;
+                height: 70px;
+                width: 80px;
+                filter: invert(90%);
             }
             p{
                 font-size: 14px;
@@ -61,6 +75,11 @@
                 color: white;
                 font-size: 17px;
             }
-        } 
+        }
+         
     }
+}
+
+.close{
+    display: none;
 }

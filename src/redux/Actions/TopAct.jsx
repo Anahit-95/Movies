@@ -12,10 +12,10 @@ export function activate(index){
 export function getTop(){
     return function (dispatch, getState) {
         const state = getState();
-        let url=url1+state.free.urls[state.free.activeIndex]+url3
-        axios.get(url+(state.free.currentPage + 1))
+        let url=url1+state.topRated.urls[state.topRated.activeIndex]+url3
+        axios.get(url+(state.topRated.currentPage + 1))
             .then(r=>{
-                dispatch(getTopList(r.data.results,state.free.currentPage + 1))
+                dispatch(getTopList(r.data.results,state.topRated.currentPage + 1))
             })
     }
 }

@@ -1,4 +1,4 @@
-import freeState from '../State/free'
+import freeState from '../State/topRated'
 
 function freeRed(state=freeState,action){
     let temp={...state}

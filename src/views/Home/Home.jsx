@@ -1,5 +1,5 @@
 import React from 'react'
-import Free from '../../components/Home/Free'
+import Free from '../../components/Home/TopRated'
 import Header from '../../components/Home/Header'
 import Join from '../../components/Home/Join'
 import Popular from '../../components/Home/Popular'

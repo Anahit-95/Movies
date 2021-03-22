@@ -13,12 +13,10 @@ function trailerRed(state=trailerState,action) {
             temp.movies.push(...action.data)
         }
         temp.currentPage = action.page
-        // temp.movies.push(...action.data)
     }
-    if (action.type == "GetVideos") {
-        temp.videos.push(action.data)
-        // temp.videos=action.data
-        console.log(temp.videos)
+    if (action.type == "SetVideo") {
+        temp.video = action.data
+        temp.movies[action.index].video="https://www.youtube.com/embed/"+action.data.key
     }
     return temp
 }
